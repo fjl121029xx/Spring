@@ -27,7 +27,8 @@ public class App {
 
         context.close();
     }
-    @Test
+
+    @Test //工厂创建bean 第一种方式
     public void beanFactory() throws Exception {
 
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
@@ -42,7 +43,8 @@ public class App {
 
         context.close();
     }
-    @Test
+
+    @Test //工厂创建bean 第二种方式
     public void injectFactoryBean() throws Exception{
 
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
