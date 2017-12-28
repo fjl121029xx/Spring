@@ -1,6 +1,6 @@
-package com.li.spring.fit_outbean;
+package com.li.spring.firstday.fit_outbean;
 
-import com.li.spring.MyConfig;
+import com.li.spring.firstday.MyConfig;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

@@ -1,4 +1,4 @@
-package com.li.spring.beanInit_destory;
+package com.li.spring.firstday.beanInit_destory;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;

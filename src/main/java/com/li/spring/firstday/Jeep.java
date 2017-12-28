@@ -1,4 +1,4 @@
-package com.li.spring;
+package com.li.spring.firstday;
 
 public class Jeep {
 

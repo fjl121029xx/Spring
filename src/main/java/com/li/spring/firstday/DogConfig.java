@@ -1,6 +1,6 @@
-package com.li.spring;
+package com.li.spring.firstday;
 
-import com.li.spring.beanInit_destory.Dog;
+import com.li.spring.firstday.beanInit_destory.Dog;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

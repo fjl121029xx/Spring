@@ -1,10 +1,9 @@
-package com.li.spring;
+package com.li.spring.firstday;
 
-import com.li.spring.beanInit_destory.Dog;
-import com.li.spring.fit_outbean.User;
-import com.li.spring.fit_outbean.UserController;
-import com.li.spring.fit_outbean.UserDao;
-import com.li.spring.fit_outbean.UserService;
+import com.li.spring.firstday.beanInit_destory.Dog;
+import com.li.spring.firstday.fit_outbean.UserController;
+import com.li.spring.firstday.fit_outbean.UserDao;
+import com.li.spring.firstday.fit_outbean.UserService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class AnnotationClient2 {

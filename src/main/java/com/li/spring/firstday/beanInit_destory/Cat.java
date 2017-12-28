@@ -1,4 +1,4 @@
-package com.li.spring.beanInit_destory;
+package com.li.spring.firstday.beanInit_destory;
 
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;

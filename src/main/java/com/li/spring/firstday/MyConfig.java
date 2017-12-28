@@ -1,12 +1,8 @@
-package com.li.spring;
+package com.li.spring.firstday;
 
-import com.li.spring.beanInit_destory.Dog;
-import com.li.spring.beanInit_destory.Pig;
-import com.li.spring.fit_outbean.User;
-import com.li.spring.fit_outbean.UserDao;
+import com.li.spring.firstday.fit_outbean.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Scope;
 
 @Configuration//声明这是一个配置类

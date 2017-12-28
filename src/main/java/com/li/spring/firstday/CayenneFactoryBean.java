@@ -1,4 +1,4 @@
-package com.li.spring;
+package com.li.spring.firstday;
 
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.lang.Nullable;

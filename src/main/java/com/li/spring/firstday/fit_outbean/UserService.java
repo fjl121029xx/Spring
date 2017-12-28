@@ -1,4 +1,4 @@
-package com.li.spring.fit_outbean;
+package com.li.spring.firstday.fit_outbean;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

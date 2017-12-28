@@ -1,8 +1,6 @@
-package com.li.spring;
+package com.li.spring.firstday;
 
-import com.li.spring.beanInit_destory.Cat;
-import com.li.spring.beanInit_destory.Dog;
-import com.li.spring.fit_outbean.UserDao;
+import com.li.spring.firstday.fit_outbean.UserDao;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;

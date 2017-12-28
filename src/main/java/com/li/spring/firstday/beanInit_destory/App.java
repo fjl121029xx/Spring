@@ -1,6 +1,6 @@
-package com.li.spring.beanInit_destory;
+package com.li.spring.firstday.beanInit_destory;
 
-import com.li.spring.MyConfig;
+import com.li.spring.firstday.MyConfig;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
