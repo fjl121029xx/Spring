@@ -13,8 +13,9 @@ public class Cat implements InitializingBean,DisposableBean {
     @Override
     public void afterPropertiesSet() throws Exception {
         //bean装配之后,初始化属性
-        this.name = "小白2";
-        System.out.println("=====afterPropertiesSet=====");
+        this.name = "小白234";
+        System.out.println("测试冲突");
+        System.out.println("====！！=afterPropertiesSet=====");
     }
 
     @Override
