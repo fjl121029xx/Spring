@@ -8,7 +8,7 @@ public class Dog implements InitializingBean{
 
     public void init() {
 
-        this.name = "老二";
+        this.name = "老二3";
         System.out.println("=====init======");
     }
 
