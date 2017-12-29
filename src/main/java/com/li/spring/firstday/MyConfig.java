@@ -1,5 +1,6 @@
 package com.li.spring.firstday;
 
+import com.li.spring.firstday.beanInit_destory.Cat;
 import com.li.spring.firstday.fit_outbean.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -34,10 +35,10 @@ public class MyConfig {
     }
 
     //Bean的初始化 第一种方式 implements InitializingBean
-    /*@Bean
+    @Bean
     public Cat createCat() {
         return new Cat();
-    }*/
+    }
 
     //Bean的初始化 第二种方式 自己声明init,destory方法
     /*@Bean(initMethod = "init", destroyMethod = "destory")
