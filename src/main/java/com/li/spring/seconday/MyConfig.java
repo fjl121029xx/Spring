@@ -7,15 +7,15 @@ import org.springframework.context.annotation.FilterType;
 
 @ComponentScan(
         basePackages = "com.li.spring.seconday",
-        excludeFilters = @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, classes = {Book.class})
+        excludeFilters = @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, classes = {Book.class, User.class})
 )
 @Configuration
 public class MyConfig {
 
-    @Bean
+    /*@Bean
     public EchoBeanPostProcessor createEchoBeanPostProcessor() {
 
         return new EchoBeanPostProcessor();
-    }
+    }*/
 
 }

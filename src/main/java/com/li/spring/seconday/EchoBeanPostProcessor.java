@@ -1,5 +1,6 @@
 package com.li.spring.seconday;
 
+import com.sun.org.apache.bcel.internal.generic.L2D;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 
@@ -11,7 +12,7 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
 public class EchoBeanPostProcessor implements BeanPostProcessor {
 
     @Override
-    //bean的属性设置之前,依赖注入之后
+    //是在bean依赖装配(属性设置完后)完成之后出发
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
 
         if (bean instanceof User) {
@@ -34,6 +35,13 @@ public class EchoBeanPostProcessor implements BeanPostProcessor {
         if (bean instanceof User) {
 
             System.out.println(" postProcessAfterInitialization\t: " + beanName);
+
+            User l =new LogUser();
+
+            l.setSex("男");
+            l.show();
+
+            return l;
         }
         return bean;
     }

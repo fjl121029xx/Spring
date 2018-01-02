@@ -2,6 +2,7 @@ package com.li.spring.seconday;
 
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ConfigurationClassPostProcessor;
 
 public class App {
 
@@ -10,12 +11,12 @@ public class App {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
         /*
         * 三中方式ApplicationContext注入
-        * 一...
+        * 一...User
         *  @Autowired
         * private AnnotationConfigApplicationContext context;
-        * 二...
+        * 二...Book
         * implements ApplicationContextAware
-        * 三...
+        * 三...Bank
         * public Bank(ApplicationContext context) { this.context = context;}
         *
         * */
@@ -28,9 +29,11 @@ public class App {
     @Test
     public void echoBeanPostProcessor() throws Exception {
 
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class, Dog.class);
 
-        context.getBean(User.class).say();
+        context.getBean(Dog.class).show();
+
+        //context.addBeanFactoryPostProcessor();
 
         context.close();
     }
